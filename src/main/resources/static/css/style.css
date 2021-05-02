@@ -39,6 +39,33 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.vizitka2 {
+    max-width:45em;
+    height: 16em;
+    border: 1px solid gray;
+    background-color: white;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.vizitka--nova {
+    background-color: #FFFFFF66;
+    border: 3px dotted white;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover .vizitka {
+    box-shadow: 10px 10px 10px black;
+    transform: translate(-5px, -5px);
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .jmeno {
@@ -60,7 +87,7 @@ a {
 }
 
 .kontakty {
-    text-align: right;
+    text-align: left;
 }
 
 .detail {
@@ -72,6 +99,19 @@ a {
     align-items: center;
 }
 
+.detail nav {
+    margin: 1em;
+    font-size: 150%;
+}
+
+.detail nav a {
+    color: white;
+}
+
+.detail nav a:hover {
+    text-decoration: underline;
+}
+
 .mapa {
     width: 36em;
     height: 36em;
@@ -79,3 +119,20 @@ a {
     margin: 1em;
     box-shadow: 5px 5px 10px black;
 }
+.button{
+    font: 10pt 'Raleway', sans-serif;
+    margin: 1em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.return{
+    min-height: 10vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    }

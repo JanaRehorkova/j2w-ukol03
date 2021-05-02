@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vizitkovník</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+<form th:action="@{/nova}" method="post">
+<div class="detail">
+    <div class="vizitka2">
+        <div class="jmeno">
+            <label for="jmenoaprijmeni">Jméno</label>
+            <input id="jmenoaprijmeni" name="jmeno" type="text" />
+        </div>
+        <div class="firma">
+            <label for="novafirma">Firma</label>
+            <input id="novafirma" name="firma" type="text" />
+        </div>
+        <div class="udaje">
+            <div class="adresa">
+                <div>
+                    <label for="novaulice">Ulice</label>
+                    <input id="novaulice" name="ulice" type="text" />
+                </div>
+
+                <div>
+                    <label for="novaobec">PSČ a obec</label>
+                    <input id="novaobec" name="obecPsc" type="text" />
+                </div>
+            </div>
+            <div class="kontakty">
+                <div>
+                    <label for="novyemail"><i class="las la-at"></i></label>
+                    <input id="novyemail" name="email" type="text" />
+                </div>
+                <div>
+                    <label for="novytel"><i class="las la-phone-alt"></i></label>
+                    <input id="novytel" name="telefon" type="text" /></div>
+                <div>
+                    <label for="novyweb"><i class="las la-globe"></i></label>
+                    <input id="novyweb" name="web" type="text" /></div>
+            </div>
+            </div>
+    </div>
+    <div>
+    <button type="submit">Vytvoř novou vizitku!</button>
+    </div>
+</div>
+</form>
+
+<nav>
+    <a href="/" class="return">◂ zpět na seznam</a>
+</nav>
+
+</body>
+</html>
